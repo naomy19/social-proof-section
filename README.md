@@ -24,6 +24,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 <!-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
 <br>
 <br>
+
 ## Features
 
 - [x] Users should be able to view the optimal layout for the section depending on their device's screen size.
