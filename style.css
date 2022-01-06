@@ -1,0 +1,277 @@
+/***   Variables   ***/
+:root {
+  /* Primary colors */
+  --veryDarkMagenta: hsl(300, 43%, 22%);
+  --softPink: hsl(333, 80%, 67%);
+
+  /* Neutral colors */
+  --darkGrayishMagenta: hsl(303, 10%, 53%);
+  --lightGrayishMagenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./images/bg-pattern-top-mobile.svg"),
+    url("./images/bg-pattern-bottom-mobile.svg");
+  background-position: left top, left bottom;
+  background-repeat: no-repeat;
+  font-family: "Spartan", sans-serif;
+  font-size: 1.07rem;
+  color: var(--veryDarkMagenta);
+  line-height: 1.6rem;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 7.7rem;
+}
+
+/***   Typography   ***/
+
+h1 {
+  font-size: 2.8rem;
+  color: var(--veryDarkMagenta);
+  text-align: center;
+  line-height: 2.8rem;
+}
+
+h1 + p {
+  color: var(--darkGrayishMagenta);
+  line-height: 1.7rem;
+  text-align: center;
+  margin: 1.7rem 0 3.3rem 0;
+}
+
+.col-primary {
+  color: var(--white);
+  text-align: left;
+}
+
+.col-reviewer p {
+  color: var(--softPink);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--softPink);
+}
+
+/***   Layout   ***/
+
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3.3rem;
+}
+
+.col {
+  text-align: center;
+}
+
+/* Header */
+header {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.col-neutral {
+  background-color: var(--lightGrayishMagenta);
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+}
+
+.col-neutral + .col-neutral {
+  margin-top: 1rem;
+}
+
+.col-neutral h4 {
+  margin-top: 1rem;
+}
+
+/*  Review Section */
+.section-review {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.col-primary {
+  background-color: var(--veryDarkMagenta);
+  padding: 2rem;
+  border-radius: 0.3rem;
+  text-align: left;
+}
+
+.review2,
+.review3 {
+  margin-top: 1rem;
+}
+
+.col-reviewer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.col-reviewer img {
+  width: 2.8rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  align-self: center;
+  bottom: 0;
+  left: 0;
+}
+
+footer.columns {
+  margin-bottom: 0;
+}
+
+.col-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+/***   MEDIA QUERIES   ***/
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url("./images/bg-pattern-top-desktop.svg"),
+      url("./images/bg-pattern-bottom-desktop.svg");
+    background-position: left top, bottom;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    height: 100%;
+    max-width: 1400px;
+  }
+
+  /* Review Section */
+  .section-review {
+    flex-direction: row;
+    max-height: 400px;
+    max-width: 100%;
+  }
+
+  .review2,
+  .review3 {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+
+  /* Footer */
+  footer.columns {
+    margin-bottom: 0;
+  }
+
+  .col-footer {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .col-footer p + p {
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  /* Header */
+  .col-title {
+    width: 40%;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 2.9rem;
+  }
+
+  .col-title h1,
+  .col-title p {
+    text-align: left;
+  }
+
+  header.columns {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+    margin-top: 5rem;
+  }
+
+  section + section {
+    margin-left: 2rem;
+  }
+
+  /* Rating Section */
+  .col-section-neutral {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .col-neutral {
+    padding: 1.5rem 4.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .col-neutral h4 {
+    margin: 0;
+    margin-left: 1rem;
+  }
+
+  .rating2,
+  .rating3 {
+    transition: 1s;
+  }
+
+  .rating2 {
+    margin-left: 5rem;
+  }
+
+  .rating3 {
+    margin-left: 10rem;
+  }
+
+  /* Review Section */
+  .section-review {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .review2,
+  .review3 {
+    transition: 1s;
+  }
+
+  .review2 {
+    margin-top: 3rem;
+  }
+
+  .review3 {
+    margin-top: 6rem;
+  }
+}
