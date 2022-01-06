@@ -23,7 +23,6 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 <br>
 <!-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
 <br>
-<br>
 
 ## Features
 
