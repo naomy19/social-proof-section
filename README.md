@@ -21,7 +21,7 @@
 
 This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA)
 <br>
-<!-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+Live Site URL: https://naomy19.github.io/social-proof-section/
 <br>
 
 ## Features
